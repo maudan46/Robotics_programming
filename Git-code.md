@@ -42,7 +42,7 @@ git checkout -b <branch>
 ```bash
 git log
 ```
-* Upload the files to the repository
+* Publish the files to the repository
 ```bash
 git push
 ```
