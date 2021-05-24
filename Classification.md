@@ -55,6 +55,7 @@ A language used in low-level language to write code specifically for a processor
 	It's important to know that you must have the interpreter installed on your computer in order to run the software; and the program must be translated every time that it's executed. 
 
 	*ii) State the name of a different type of translator that can be used to translate high-level code into machine code?*
+	
 	Compiler, it translates all the source code at the same time to create the compiled code, or machine code, also known as the object code.
 
 
