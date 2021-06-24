@@ -7,8 +7,11 @@
 
 int main(void) {
   float sales, tax;
+  char line[100];
+  
   printf("Write the amount of sales\n");
-  scanf("%f", &sales);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line,"%f",&sales );
 
 
   tax=((sales*8)/100)+sales;
