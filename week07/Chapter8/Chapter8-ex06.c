@@ -3,9 +3,10 @@
 int main()
 {
   int num, i=0, x, y;
-  char * word[100];
+  char * word[100],line[100] ;
   printf ("Enter a integer number: \n");
-  scanf ("%d", &num);
+  fgets(line, sizeof(line), stdin);
+	sscanf(line, "%d", &num);
   while (num)
   {
     y = num %10;
@@ -38,4 +39,3 @@ int main()
   printf ("%s ",word[x]);
   }
 }
-
