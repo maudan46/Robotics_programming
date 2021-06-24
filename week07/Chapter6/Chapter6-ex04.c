@@ -3,8 +3,10 @@
 int main(void) {
   float money;
   int value, qua, dim, nic, pen;
+  char line[100];
   printf("Write the amount of money in dollars (less than $1.00)\n");
-  scanf("%f",&money);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line,"%f", &money);
 
   value= money*100;
 
