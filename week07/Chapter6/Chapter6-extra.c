@@ -2,8 +2,10 @@
 
 int main(void) {
   int lim,x=0,y=0;
+  char line[100];
   printf("Write a limit number\n");
-  scanf("%d",&lim);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%d", &lim);
 
   while (y<lim) {
     y++;
