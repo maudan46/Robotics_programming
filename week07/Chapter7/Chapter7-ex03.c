@@ -6,9 +6,12 @@
 //Print the time
 
 int main(void) {
+  char line[100];
   float size, time, bytes;
   printf("Write the size of the file in MB\n");
-  scanf("%f",&size );
+  fgets(line, sizeof(line), stdin);
+  sscanf(line,"%f",&size );
+  
   bytes= size*1048576;
   time= bytes/960;
 
