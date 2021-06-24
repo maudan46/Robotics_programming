@@ -2,8 +2,10 @@
 
 int main(void) {
   int year;
+  char line[100];
   printf("Write the year\n");
-  scanf("%d",&year);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line,"%d", &year);
 
   if (year%4==0) {
     if (year%100==0) {
