@@ -3,6 +3,7 @@
 
 
 int main(void) {
+  
   float x1,y1,x2,y2,distance;
   char line[100]; 
 
