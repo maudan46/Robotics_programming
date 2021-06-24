@@ -8,14 +8,17 @@
 //encode
 
 int main(void) {
+  char line[100];
   int dd1, dd2, dd3, mm1, mm2, mm3, yy1, yy2, yy3, total;
 
-  printf("Write the minor date in this format( dd-mm-yy, e.i 23 05 76)\n");
-  fscanf(stdin, "%d %d %d", &dd1, &mm1, &yy1);
+  printf("Write the minor date in this format( dd-mm-yy, e.i 23 05 2001)\n");
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%d %d %d", &dd1, &mm1, &yy1);
 
-  printf("Write the bigger date in this format( dd-mm-yy, e.i 23 05 76)\n");
-  fscanf(stdin, "%d %d %d", &dd2, &mm2, &yy2);
-  
+  printf("Write the bigger date in this format( dd-mm-yy, e.i 23 05 2001)\n");
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%d %d %d", &dd2, &mm2, &yy2);
+
   yy3= yy2-yy1;
   yy3= yy3*365;
 
