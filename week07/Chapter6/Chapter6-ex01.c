@@ -1,16 +1,23 @@
 #include <stdio.h>
 #include <math.h>
 
+
 int main(void) {
   float x1,y1,x2,y2,distance;
+  char line[100]; 
+
   printf("Inserta las coordenada X del primer punto\n");
-  scanf("%f",&x1);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%f", &x1);
   printf("Ingresa la coordenada y del primer punto\n");
-  scanf("%f",&y1);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%f", &y1);
   printf("Inserta las coordenada X del segundo punto\n");
-  scanf("%f",&x2);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%f", &x2);
   printf("Ingresa la coordenada y del segundo punto\n");
-  scanf("%f",&y2);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%f", &y2);
 
   distance= sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
   
