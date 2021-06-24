@@ -1,23 +1,20 @@
 #include <stdio.h>
 
-//Ask for  the amount of money/sales
-//Scan the money
-//Operation to get the 8% of the slaes and add it to the total amount
-//print the result
+//ask for the size of the file in MB
+//transform the size from MB to bytes
+//multiplicate the size in bytes for the speed of the transmission (96 characters per second)
+//Print the time
 
 int main(void) {
-  float sales, tax;
   char line[100];
-  
-  printf("Write the amount of sales\n");
+  float size, time, bytes;
+  printf("Write the size of the file in MB\n");
   fgets(line, sizeof(line), stdin);
-  sscanf(line,"%f",&sales );
-
-
-  tax=((sales*8)/100)+sales;
+  sscanf(line,"%f",&size );
   
-  printf("The amount of money with tax incluided is %f.\n",tax);
+  bytes= size*1048576;
+  time= bytes/960;
 
-
+  printf("The time required to send the file is %f seconds\n",time);
   return 0;
 }
