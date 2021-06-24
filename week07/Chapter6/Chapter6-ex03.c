@@ -3,10 +3,11 @@
 int main(void) {
   int number, grade;
   int digit;
-  char sign [2];
+  char sign [2], line[100] ;
   
   printf("Write the number of points.\n");
-  scanf("%d", &number);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line,"%d", &number);
 
   digit= number%10;
 
