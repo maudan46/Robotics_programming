@@ -3,11 +3,14 @@
 int main(void) {
   int hours, overtime;
   float pay,total, overpay, total2;
+  char line[100];
   
   printf("How many hours have worked the employee?\n");
-  scanf("%d", &hours);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line,"%d", &hours);
   printf("How much you pay per hour in dollars?(just write the number)\n");
-  scanf("%f",&pay);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line,"%f", &pay);
 
   total = hours * pay;
 

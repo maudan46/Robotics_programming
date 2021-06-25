@@ -9,9 +9,11 @@
 
 int main(void) {
   float km, ft;
-  char line[20];
+  char line [100];
+  
   printf("Write the units you have in Km\n");
-  scanf("%f",&km);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line,"%f", &km);
 
   ft= km * 3281;
 

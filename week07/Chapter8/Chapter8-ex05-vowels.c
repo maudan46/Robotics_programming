@@ -2,9 +2,10 @@
 #include <string.h>
 
 int main(void) {
-  char letter[3];
+  char letter[3], line[100] ;
   printf("Write a letter\n");
-  scanf("%s",letter);
+  fgets(line, sizeof(line), stdin);
+	sscanf(line, "%s", letter);
 
   if (strcmp (letter, "a")==0){
     printf("It's a vowel.\n");
