@@ -25,5 +25,8 @@ int main(void) {
 	vol= ((pi * (r1 * r1)) * h1);
 	printf("El area es %f\n",area);
 	printf("y el volumen es %f\n",vol);
+	
+	fclose(archivo);
+	printf("Se ha leído el archivo correctamente...");
 	return 0;
 }
