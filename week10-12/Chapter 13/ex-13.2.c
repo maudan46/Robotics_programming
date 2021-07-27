@@ -11,7 +11,7 @@ int main()
   printf("Write something (Less than 100 characters)\n");
   scanf("%s",string);
 
-	printf("The first non-white character in the string is: '%c'\n", *nonwhite(string));
+	printf("The first non-white character in the string is: %c\n", *nonwhite(string));
 
 	return 0;
 }
