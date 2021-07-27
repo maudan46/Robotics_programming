@@ -1,3 +1,0 @@
-Peso: 72.000000
-Altura: 1.720000 m
-Tu IMC es de 24.337481 y está en un rango normal
