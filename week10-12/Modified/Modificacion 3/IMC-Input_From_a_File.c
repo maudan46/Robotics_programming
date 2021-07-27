@@ -29,19 +29,16 @@ int
 	
 	if ((imc>18.5) && (imc<25)) {
 		printf("Tu IMC es de %f y está en un rango normal\n",imc);
-		fprintf(archivo,"Peso: %f\nAltura: %f m\nTu IMC es de %f y está en un rango normal\n",kg,alt,imc);
 	}
 	else if ((imc>24.9) && (imc<30)) {
 		printf("Tu IMC es de %f y está en un rango de sobrepeso\n",imc);
-		fprintf(archivo,"Peso: %f\nAltura: %f m\nTu IMC es de %f y está en un rango de sobrepeso\n",kg,alt,imc);
 	}
 	else if ((imc>29.9)) {
 		printf("Tu IMC es de %f y está en un rango de obesidad\n",imc);
-		fprintf(archivo,"Peso: %f\nAltura: %f m\nTu IMC es de %f y está en un rango de obesidad\n",kg,alt,imc);
 	}
 	else {
 		printf("Tu IMC es de %f y está en un rango por debajo del peso normal\n",imc); 
-		fprintf(archivo,"Peso: %f\nAltura: %f m\nTu IMC es de %f y está por debajo del rango normal\n",kg,alt,imc);
+
 	}
 	fclose(archivo);
 	printf("Se ha leído el archivo correctamente...");
